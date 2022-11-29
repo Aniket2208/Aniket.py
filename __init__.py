@@ -1,13 +1,14 @@
 class Computer:
 
-    def __init__(self):
-        print("in __init__")
+    def __init__(self,cpu,ram):
+        self.cpu = cpu
+        self.ram = ram
 
     def config(self):
-        print("i5,8Gb,16Tb")
+        print("Config is", self.cpu, self.ram)
 
-a = Computer()
-b = Computer()
+a = Computer('i5','16')
+b = Computer('Ryzon3','8')
 #print(type(a))
 
 #Computer.config(a)

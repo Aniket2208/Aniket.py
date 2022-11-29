@@ -1,8 +1,14 @@
-print('First Project')
+class Computer:
 
-def add():
-    a = int(input('Enter a '))
-    b = int(input('Enter b '))
-    return a+b
+    def config(self):
+        print("i5,8Gb,16Tb")
 
-print(add())
+a = Computer()
+#print(type(a))
+
+Computer.config(a)
+
+print(a.config())
+
+b = 5
+print(b.bit_length())
